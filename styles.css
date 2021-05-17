@@ -1,0 +1,378 @@
+/* font-family: 'Tangerine', cursive;
+font-family: 'Caladea', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Arapey', serif; */
+
+body,
+html {
+  height: 100%;
+  background-color: #000;
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: "Tangerine", cursive;
+  margin: 20px 0;
+  text-align: center;
+  color: #f0a500;
+  font-size: 3rem;
+  font-style: bold;
+}
+
+h2 {
+  font-family: "Caladea", serif;
+  text-align: center;
+  padding: 5px 0;
+}
+
+h4 {
+  color: #dbdbdb;
+  font-family: "Caladea", serif;
+}
+
+.blackSection h2 {
+  color: white;
+}
+
+.whiteSection h2 {
+  color: black;
+}
+
+th {
+  font-family: "Arapey", serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+td {
+  font-family: "Arapey", serif;
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: "Arapey", serif;
+  font-size: 1.2rem;
+}
+
+/******* Index Page ******/
+/*.container {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
+}*/
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
+}
+.frontImage {
+  margin-top: 10px;
+}
+
+.frontImage img {
+  width: 325px;
+  border-radius: 50%;
+}
+
+.frontHeading {
+  margin-top: 0;
+  color: #cf7500;
+  font-family: "Tangerine", cursive;
+  font-size: 5rem;
+}
+
+.headingContainer {
+  text-align: center;
+}
+
+.frontPageBtn {
+  background-color: #d7385e;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 9px;
+}
+
+.headingContainer a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 765px) {
+  .frontHeading {
+    font-size: 4rem;
+    margin-top: 10px;
+  }
+  .frontPageBtn {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+/******* Main-Site ******/
+/* Navar Section */
+.profile-img {
+  width: 50px;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f8b500;
+}
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-toggler span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(248,181,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* change hamburger button border color */
+.navbar-toggler {
+  border-color: #f8b500 !important;
+  border-width: 2px;
+  padding: 0.15rem 0.5rem !important;
+}
+
+.navbar-toggler-icon {
+  width: 1em !important;
+  height: 1em !important;
+}
+
+/* To remove the Blue Box that comes on clicking the Toggle Button*/
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus {
+  outline: 0;
+}
+
+.navbar-inner {
+  background: transparent;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  max-width: 100%;
+}
+
+@media (max-width: 765px) {
+  .nav-custom {
+    height: 70px;
+  }
+
+  .profile-img {
+    display: none;
+    padding: 0;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 17px;
+  }
+}
+
+/* Carousel Section */
+.carousel-img {
+  width: 75%;
+}
+
+.carousel-item {
+  margin: 0 auto;
+}
+
+@media (max-width: 765px) {
+  .carousel-img {
+    width: 100%;
+  }
+}
+
+/* Story Section */
+#storySection {
+  padding: 30px 15px;
+  background-color: white;
+}
+
+.emotionalMessage {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 70%;
+  line-height: 1.5;
+}
+
+#storySection .videoBox {
+  margin: 30px 0;
+  height: 450px;
+}
+
+@media (max-width: 765px) {
+  .emotionalMessage {
+    width: 85%;
+  }
+}
+/**** Photos Section ****/
+#photosSection {
+  padding: 30px 15px 0;
+  background-color: #000;
+}
+
+.image-Row {
+  margin: 20px auto 50px;
+}
+
+.imgBox {
+  text-align: center;
+  border: 3px solid;
+  border-color: #fff;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.imgBox img {
+  width: 100%;
+}
+
+.photosSubHeading {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.belowEventsHeading {
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.eventHeading {
+  text-align: center;
+  padding: 10px;
+}
+
+.extrasRow {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .image-Row {
+    margin: 0;
+  }
+
+  .eventHeading {
+    padding-bottom: 10px;
+  }
+
+  #photosSection {
+    margin-bottom: 50px;
+  }
+}
+
+/***Video Section***/
+#videoSection {
+  padding: 30px 15px;
+  background-color: #fff;
+}
+
+.videosHeading {
+  margin-bottom: 40px;
+}
+
+.videoBox {
+  margin: 0 auto 50px;
+  border: 3px solid;
+  border-color: #000;
+  padding: 4px;
+  height: 365px;
+}
+
+.videoBox iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/***Connect Section***/
+#connectSection {
+  padding: 30px 15px;
+  background-color: #000;
+}
+
+.fontawesome {
+  color: white;
+}
+
+.socialMediaTable {
+  padding-top: 20px;
+}
+
+.socialMediaTable a {
+  color: #cf7500;
+  text-decoration: none;
+}
+
+.socialMediaTable a:visited {
+  color: #cf7500;
+}
+
+.socialMediaHeading {
+  padding: 50px 15px;
+}
+
+.borderless td,
+.borderless th {
+  border: none;
+  padding: 20px;
+}
+
+@media (max-width: 765px) {
+  .socialMediaTable {
+    padding-top: 0;
+  }
+
+  .socialMediaHeading {
+    padding: 10px 5px;
+  }
+}
+
+/***Footer Section***/
+#footer {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #000;
+}
+
+.footer-text {
+  font-family: "Arapey", serif;
+  font-size: 1rem;
+  color: #8f8f8f;
+  padding-bottom: 10px;
+}
+
+.footer-special {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.7rem;
+  color: #d7385e;
+}
